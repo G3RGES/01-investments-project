@@ -1,24 +1,6 @@
 import React, { useState } from "react";
 
-const INVESTMENTS = {
-  initialInvestment: 10000,
-  annualInvestment: 1200,
-  expectedReturns: 6,
-  duration: 10,
-};
-
-const UserInput = () => {
-  const [userInput, setUserInput] = useState(INVESTMENTS);
-
-  const handleUserInputChange = (inputIdentifier, newValue) => {
-    setUserInput((prevUserInput) => {
-      return {
-        ...prevUserInput,
-        [inputIdentifier]: newValue,
-      };
-    });
-  };
-
+const UserInput = ({ userInput, onInputChange }) => {
   return (
     <section id="user-input">
       <div className="input-group">
@@ -30,7 +12,7 @@ const UserInput = () => {
               type="number"
               required
               onChange={(event) =>
-                handleUserInputChange("initialInvestment", event.target.value)
+                onInputChange("initialInvestment", event.target.value)
               }
               value={userInput.initialInvestment}
             />
@@ -44,7 +26,7 @@ const UserInput = () => {
               type="number"
               required
               onChange={(event) =>
-                handleUserInputChange("annualInvestment", event.target.value)
+                onInputChange("annualInvestment", event.target.value)
               }
               value={userInput.annualInvestment}
             />
@@ -60,7 +42,7 @@ const UserInput = () => {
               type="number"
               required
               onChange={(event) =>
-                handleUserInputChange("expectedReturns", event.target.value)
+                onInputChange("expectedReturns", event.target.value)
               }
               value={userInput.expectedReturns}
             />
@@ -74,7 +56,7 @@ const UserInput = () => {
               type="number"
               required
               onChange={(event) =>
-                handleUserInputChange("duration", event.target.value)
+                onInputChange("duration", event.target.value)
               }
               value={userInput.duration}
             />
