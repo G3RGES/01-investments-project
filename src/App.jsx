@@ -6,7 +6,7 @@ import UserInput from "./components/UserInput";
 const INVESTMENTS = {
   initialInvestment: 10000,
   annualInvestment: 1200,
-  expectedReturns: 6,
+  expectedReturn: 6,
   duration: 10,
 };
 
