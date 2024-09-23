@@ -6,21 +6,21 @@ const UserInput = () => {
       <div className="input-group">
         <p>
           <label>Initial Investment</label>
-          <input type="text" />
+          <input type="number" required />
         </p>
         <p>
           <label>Annual Investment</label>
-          <input type="text" />
+          <input type="number" required />
         </p>
       </div>
       <div className="input-group">
         <p>
-          <label>Initial Investment</label>
-          <input type="text" />
+          <label>Expected Return</label>
+          <input type="number" required />
         </p>
         <p>
-          <label>Annual Investment</label>
-          <input type="text" />
+          <label>Duration</label>
+          <input type="number" required />
         </p>
       </div>
     </section>
