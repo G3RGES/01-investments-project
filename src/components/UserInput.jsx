@@ -38,13 +38,13 @@ const UserInput = ({ userInput, onInputChange }) => {
           <label>
             Expected Return
             <input
-              name="expectedReturns"
+              name="expectedReturn"
               type="number"
               required
               onChange={(event) =>
-                onInputChange("expectedReturns", event.target.value)
+                onInputChange("expectedReturn", event.target.value)
               }
-              value={userInput.expectedReturns}
+              value={userInput.expectedReturn}
             />
           </label>
         </p>
