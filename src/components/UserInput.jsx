@@ -38,7 +38,7 @@ const UserInput = ({ userInput, onInputChange }) => {
           <label>
             Expected Return
             <input
-              name="expectedReturn"
+              name="expectedReturns"
               type="number"
               required
               onChange={(event) =>
