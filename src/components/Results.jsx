@@ -4,9 +4,7 @@ import { calculateInvestmentResults } from "./../util/investment";
 const Results = ({ userInput }) => {
   const resultData = calculateInvestmentResults(userInput);
 
-  console.log(resultData);
-
-  return <div>Results</div>;
+  return <table id="result">Results</table>;
 };
 
 export default Results;
